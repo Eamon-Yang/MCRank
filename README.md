@@ -1,18 +1,15 @@
-<div align="center">
-
 ## MCRank
 
 #### Multidimensional Chemical Risk Prioritization
 
 **Ecological and human-health analysis · Evidence assessment · Monte Carlo rank robustness**
 
-![Version](https://img.shields.io/badge/version-1.0.0-484C5D)
-![Interface](https://img.shields.io/badge/interface-English-687384)
-![Desktop](https://img.shields.io/badge/desktop-PySide6-687384)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Interface](https://img.shields.io/badge/Interface-English-brightgreen)
+![Desktop](https://img.shields.io/badge/Desktop-PySide6-00A6C8)
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
-![Monte Carlo](https://img.shields.io/badge/Monte%20Carlo-Simulation-6C3483)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
+![Monte Carlo](https://img.shields.io/badge/Monte_Carlo-Simulation-purple)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 [Overview](#overview) · [Quick start](#quick-start) · [Methods](#analysis-framework) · [Data](#input-data) · [Outputs](#outputs-and-figures) · [Citation](#citation)
 
