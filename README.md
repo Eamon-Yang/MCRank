@@ -76,10 +76,10 @@ flowchart TD
 
 | Module and mode | Core information | Additional information |
 |---|---|---|
-| **Eco · Risk** | Environmental concentration / accepted PNEC | Occurrence, persistence, and bioaccumulation |
-| **Eco · Screening** | Exposure and accepted ecological hazard information | Persistence and bioaccumulation |
-| **Human · Risk** | Biomonitoring concentration / accepted, compatible HB2GV | Occurrence and toxicokinetics |
-| **Human · Screening** | Exposure and a reviewed human hazard score | Toxicokinetics |
+| **Eco_Risk** | Environmental concentration / accepted PNEC | Occurrence, persistence, and bioaccumulation |
+| **Eco_Screening** | Exposure and accepted ecological hazard information | Persistence and bioaccumulation |
+| **Human_Risk** | Biomonitoring concentration / accepted, compatible HB2GV | Occurrence and toxicokinetics |
+| **Human_Screening** | Exposure and a reviewed human hazard score | Toxicokinetics |
 
 For Human Risk, sample and benchmark **matrix** and **basis** must match and be nonempty. Eco Screening prioritizes accepted chronic hazard information over acute information. These choices are explicit in the implementation and [data dictionary](docs/DATA_DICTIONARY.md).
 
