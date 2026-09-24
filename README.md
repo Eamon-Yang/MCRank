@@ -9,7 +9,10 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-484C5D)
 ![Interface](https://img.shields.io/badge/interface-English-687384)
 ![Desktop](https://img.shields.io/badge/desktop-PySide6-687384)
-[![License: MIT](https://img.shields.io/badge/license-MIT-566172)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![Monte Carlo](https://img.shields.io/badge/Monte%20Carlo-Simulation-6C3483)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 
 [Overview](#overview) · [Quick start](#quick-start) · [Methods](#analysis-framework) · [Data](#input-data) · [Outputs](#outputs-and-figures) · [Citation](#citation)
 
