@@ -53,30 +53,8 @@ The software brings data validation, priority ranking, evidence assessment, Mont
 
 ### Analysis framework
 
-```mermaid
-flowchart TD
-    A[CSV or XLSX chemical dataset] --> B[Validate fields, units, and comparison groups]
-    B --> C[Select Eco or Human module]
-    C --> D{Analysis mode}
-    D -->|Risk| R[Accepted and compatible benchmark inputs]
-    D -->|Screening| S[Eligible exposure and hazard inputs]
-    D -->|Auto| T[Try Risk, then Screening]
-    T --> R
-    T --> S
-    T --> I[If neither is eligible: Insufficient]
-    R --> K[Risk core + applicable modifiers]
-    S --> L[Exposure–hazard core + fate or TK modifier]
-    K --> P[Priority score and within-group/mode rank]
-    L --> P
-    B --> E[Evidence metadata → ECI]
-    P --> Q[Priority and ECI → DAP]
-    E --> Q
-    P --> M[Monte Carlo scores, ranks, and Top-K]
-    P --> O[Tables and figures]
-    E --> O
-    Q --> O
-    M --> O
-```
+<img width="1536" height="1024" alt="mcrank-workflow-v1" src="https://github.com/user-attachments/assets/00f87b33-0392-488f-9f2a-70dbf9d972ac" />
+
 
 *Conceptual workflow. Forced Risk or Screening requires eligible inputs and never silently switches to another mode. Risk and Screening scores are not pooled into one ranking.*
 
