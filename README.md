@@ -1,3 +1,5 @@
+<div align="center">
+
 ## MCRank
 
 #### Multidimensional Chemical Risk Prioritization
