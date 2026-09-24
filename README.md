@@ -47,8 +47,7 @@ The software brings data validation, priority ranking, evidence assessment, Mont
 
 ### Analysis framework
 
-<img width="1536" height="1024" alt="mcrank-workflow-v1" src="https://github.com/user-attachments/assets/00f87b33-0392-488f-9f2a-70dbf9d972ac" />
-
+<img width="709" height="397" alt="MCRank_analysis_workflow" src="https://github.com/user-attachments/assets/031f08c2-839e-4982-8186-7e381b27faa4" />
 
 *Conceptual workflow. Forced Risk or Screening requires eligible inputs and never silently switches to another mode. Risk and Screening scores are not pooled into one ranking.*
 
