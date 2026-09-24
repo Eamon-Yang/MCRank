@@ -6,8 +6,7 @@
 
 **Ecological and human-health analysis · Evidence assessment · Monte Carlo rank robustness**
 
-
-![Interface](https://img.shields.io/badge/Interface-English-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
 ![Chemical Prioritization](https://img.shields.io/badge/Chemical-Prioritization-0D9488)
