@@ -1,8 +1,8 @@
 <div align="center">
 
-# MCRank
+## MCRank
 
-### Multidimensional Chemical Risk Prioritization
+#### Multidimensional Chemical Risk Prioritization
 
 **Ecological and human-health analysis · Evidence assessment · Monte Carlo rank robustness**
 
@@ -19,7 +19,7 @@
 
 *The MCRank v1.0 desktop interface. The displayed records are synthetic examples, not measured chemical data.*
 
-## Overview
+### Overview
 
 MCRank is a Python desktop application for prioritizing chemicals using exposure, hazard or risk benchmarks, environmental fate or toxicokinetics, and evidence metadata. It provides separate **ecological** and **human-health** workflows, each supporting **Risk**, **Screening**, and automatic mode selection.
 
@@ -27,7 +27,7 @@ The software brings data validation, priority ranking, evidence assessment, Mont
 
 > **Scientific status.** Version 1.0 uses explicit, configurable defaults that have not been scientifically calibrated. The examples are synthetic. Software tests and reproducible execution do not establish predictive validity on real datasets. See [Methods and assumptions](docs/METHODS.md) before interpreting results.
 
-### Capabilities
+#### Capabilities
 
 | Component | Implemented functionality |
 |---|---|
@@ -43,7 +43,7 @@ The software brings data validation, priority ranking, evidence assessment, Mont
 | Reproducibility | Project save/open, configurable seed, exported settings, and normalized-input hash |
 | Export | CSV, XLSX, PNG, JSON, and simulation arrays; individual figures in PNG/PDF/SVG |
 
-## Analysis framework
+### Analysis framework
 
 ```mermaid
 flowchart TD
@@ -72,7 +72,7 @@ flowchart TD
 
 *Conceptual workflow. Forced Risk or Screening requires eligible inputs and never silently switches to another mode. Risk and Screening scores are not pooled into one ranking.*
 
-### Four analysis pathways
+#### Four analysis pathways
 
 | Module and mode | Core information | Additional information |
 |---|---|---|
@@ -83,7 +83,7 @@ flowchart TD
 
 For Human Risk, sample and benchmark **matrix** and **basis** must match and be nonempty. Eco Screening prioritizes accepted chronic hazard information over acute information. These choices are explicit in the implementation and [data dictionary](docs/DATA_DICTIONARY.md).
 
-### Scores and their interpretation
+#### Scores and their interpretation
 
 - **Priority:** the implemented risk- or screening-based prioritization score on a 0–1 scale. The output identifies the mode and score type.
 - **ECI:** a geometric aggregation of available evidence components. It is **not a probability**; completeness-only ECI does not demonstrate evidence reliability.
@@ -92,9 +92,9 @@ For Human Risk, sample and benchmark **matrix** and **basis** must match and be 
 
 ECI, DAP, and rank robustness do not feed back into Priority. Optional missing inputs use available-weight renormalization; mandatory missing core information produces an **Insufficient** result.
 
-## Quick start
+### Quick start
 
-### Windows desktop application
+#### Windows desktop application
 
 When a packaged version is available, download **MCRank-v1.0.0-Windows-x64.zip** from this repository's **Releases** section.
 
@@ -106,7 +106,7 @@ When a packaged version is available, download **MCRank-v1.0.0-Windows-x64.zip**
 
 The packaged application requires no separate Python installation. Do not move the executable without its accompanying `_internal` folder. The Windows executable is not included in the source tree; GitHub's automatically generated source archives are not the desktop application.
 
-### Run from source
+#### Run from source
 
 The delivered build was prepared on Windows with **64-bit Python 3.14.3**. Exact top-level dependency versions are recorded in [requirements-tested.txt](requirements-tested.txt). Other Python/OS combinations have not been validated by this release.
 
@@ -120,7 +120,7 @@ python -m venv .venv
 
 Alternatively, `start_windows.bat` creates a local environment and installs the compatible version ranges in `requirements.txt` on first use. Installing source dependencies requires network access.
 
-### Command-line analysis
+#### Command-line analysis
 
 ```powershell
 # Ecological analysis with automatic mode selection and Monte Carlo
@@ -135,7 +135,7 @@ Alternatively, `start_windows.bat` creates a local environment and installs the 
 
 The CLI reads the first XLSX worksheet; the GUI lets the user select a worksheet. Use `python -m mcrank --help` for arguments. The packaged `MCRank.exe` is the desktop launcher; these batch commands use the source installation.
 
-## Desktop workflow
+### Desktop workflow
 
 | Page | Purpose |
 |---|---|
@@ -150,7 +150,7 @@ Use the analysis card to select **Eco/Human**, **Auto/Risk/Screening**, and **Eq
 
 The desktop edition has six pages. Advanced configuration and run-log editors are not exposed as separate pages. For custom weights or data-error models, edit a full configuration JSON and use CLI `--config`, or load a project containing those settings. Selecting Custom alone uses the weights currently stored in the configuration. Exported `run_metadata.json` contains the run settings and assumptions.
 
-## Input data
+### Input data
 
 Start with the bundled [CSV template](examples/input_template.csv) or [Excel template](examples/input_template.xlsx). The [CSV demonstration dataset](examples/chemicals.csv) and [Excel demonstration dataset](examples/chemicals.xlsx) contain **12 synthetic records**.
 
@@ -175,7 +175,7 @@ Important input conventions:
 
 See the [complete input dictionary](docs/DATA_DICTIONARY.md) for field definitions and acceptance rules.
 
-## Outputs and figures
+### Outputs and figures
 
 ![Example ecological priority rankings, separated by Risk and Screening](docs/images/example-ranking.png)
 
@@ -189,7 +189,7 @@ See the [complete input dictionary](docs/DATA_DICTIONARY.md) for field definitio
 
 *Actual release self-test output, using 30 iterations solely for a short software demonstration. This run does not establish Monte Carlo convergence. See [figure provenance](docs/FIGURES.md).*
 
-### Exported files
+#### Exported files
 
 | File | Contents |
 |---|---|
@@ -203,7 +203,7 @@ See the [complete input dictionary](docs/DATA_DICTIONARY.md) for field definitio
 
 Individual figures can also be saved as **PNG, PDF, or SVG** from Visualization. Use a new export folder for each run: same-named files are overwritten.
 
-## Reproducibility and limitations
+### Reproducibility and limitations
 
 Record the software version, dataset, configuration, iteration count, seed, and comparison groups for each analysis. Preserve the exported metadata alongside the results.
 
@@ -217,29 +217,7 @@ Record the software version, dataset, configuration, iteration count, seed, and 
 
 Details: [Methods](docs/METHODS.md) · [Software validation](docs/VALIDATION.md) · [Example figure provenance](docs/FIGURES.md).
 
-## Repository structure
-
-```text
-MCRank/
-├── README.md                 # Overview, screenshots, and usage
-├── LICENSE                   # MIT license for MCRank-authored code
-├── CITATION.cff              # Software citation metadata
-├── mcrank/                   # Calculation engine, GUI, plots, and export
-│   └── assets/               # UI vector assets
-├── tests/                    # Regression tests
-├── config/                   # Full example configurations
-├── examples/                 # Synthetic data and blank templates
-├── docs/                     # Methods, data dictionary, validation
-│   └── images/               # README screenshots and example plots
-├── run.py                    # Desktop launcher
-├── requirements*.txt         # Dependencies and tested versions
-├── MCRank.spec               # PyInstaller build specification
-├── start_windows.bat         # Source installation and startup helper
-├── build_windows.bat         # Test/build helper
-└── THIRD_PARTY.md             # Third-party component notices
-```
-
-## Tests and packaging
+### Tests and packaging
 
 ```powershell
 .venv\Scripts\python.exe -m pip install -r requirements-dev.txt
@@ -251,16 +229,8 @@ PyInstaller produces `dist/MCRank/MCRank.exe` and its accompanying dependency di
 
 Software checks performed during development and release verification are described in [VALIDATION.md](docs/VALIDATION.md). No cross-platform validation claim is made.
 
-## Citation
+### Citation
 
 If MCRank contributes to your work, cite the software version and repository, and retain the exact release tag or commit used:
 
 > Eamon-Yang. MCRank: Multidimensional Chemical Risk Prioritization. Version 1.0.0. https://github.com/Eamon-Yang/MCRank.
-
-Machine-readable citation metadata is provided in [CITATION.cff](CITATION.cff). No associated paper title, journal, or DOI is asserted here; add the verified publication details when available.
-
-## License and third-party components
-
-MCRank-authored code is distributed under the [MIT License](LICENSE). Python, PySide6/Qt, NumPy, pandas, Matplotlib, and other dependencies retain their own licenses; they are not relicensed under MIT. See [THIRD_PARTY.md](THIRD_PARTY.md).
-
-For questions or reproducible bug reports, use this repository's **Issues** section and include the software version, relevant settings, and a small non-sensitive input example.
