@@ -15,13 +15,8 @@
 ![Chemical Prioritization](https://img.shields.io/badge/Chemical-Prioritization-0D9488)
 ![Ecological Analysis](https://img.shields.io/badge/Analysis-Ecological-16A34A)
 ![Human Health](https://img.shields.io/badge/Analysis-Human_Health-E11D48)
-![CRITIC](https://img.shields.io/badge/Weighting-CRITIC-9333EA)
-![Dependency Control](https://img.shields.io/badge/IDC-Dependency_Control-4338CA)
 ![Monte Carlo](https://img.shields.io/badge/Monte_Carlo-Simulation-purple)
-![Top K](https://img.shields.io/badge/Top--K-Inclusion_Probability-DB2777)
-![ECI](https://img.shields.io/badge/ECI-Evidence_Confidence-0891B2)
-![DAP](https://img.shields.io/badge/DAP-Data_Acquisition_Priority-EA580C)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 
 
 [Overview](#overview) · [Quick start](#quick-start) · [Methods](#analysis-framework) · [Data](#input-data) · [Outputs](#outputs-and-figures) · [Citation](#citation)
