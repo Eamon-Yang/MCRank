@@ -1,4 +1,4 @@
-# MCRank v1.0
+# MCRank
 
 A desktop application for multidimensional chemical risk prioritization. Includes ecological and human-health Risk/Screening analysis, evidence indices, dependency controls, Monte Carlo uncertainty, and figure/table export.
 
