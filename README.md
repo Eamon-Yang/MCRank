@@ -14,7 +14,6 @@
 ![Chemical Prioritization](https://img.shields.io/badge/Chemical-Prioritization-0D9488)
 ![Ecological Analysis](https://img.shields.io/badge/Analysis-Ecological-16A34A)
 ![Human Health](https://img.shields.io/badge/Analysis-Human_Health-E11D48)
-![Monte Carlo](https://img.shields.io/badge/Monte_Carlo-Simulation-purple)
 
 
 
