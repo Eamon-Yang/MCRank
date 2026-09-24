@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use MCRank, please cite this software and record the release tag or commit used."
+type: software
+title: "MCRank: Multidimensional Chemical Risk Prioritization"
+version: 1.0.0
+authors:
+  - name: "Eamon-Yang"
+    website: "https://github.com/Eamon-Yang"
+repository-code: "https://github.com/Eamon-Yang/MCRank"
+license: MIT
+keywords:
+  - chemical prioritization
+  - ecological risk
+  - human health
+  - evidence assessment
+  - Monte Carlo
