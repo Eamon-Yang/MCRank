@@ -6,24 +6,7 @@
 
 **Ecological and human-health analysis · Evidence assessment · Monte Carlo rank robustness**
 
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![Interface](https://img.shields.io/badge/Interface-English-brightgreen)
-![Desktop](https://img.shields.io/badge/Desktop-PySide6-00A6C8)
-![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
-![Monte Carlo](https://img.shields.io/badge/Monte_Carlo-Simulation-purple)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-
-
 ![MCRank](https://img.shields.io/badge/Software-MCRank-2563EB)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![Language](https://img.shields.io/badge/Interface-English-22C55E)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)
-![Architecture](https://img.shields.io/badge/Architecture-x64-475569)
-![Application](https://img.shields.io/badge/Application-Desktop-6366F1)
-![GUI](https://img.shields.io/badge/GUI-PySide6-41CD52)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-
-
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 ![Interface](https://img.shields.io/badge/Interface-English-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)
