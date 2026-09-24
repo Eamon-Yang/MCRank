@@ -10,11 +10,9 @@
 ![Interface](https://img.shields.io/badge/Interface-English-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
-![PySide6](https://img.shields.io/badge/GUI-PySide6-41CD52)
 ![Chemical Prioritization](https://img.shields.io/badge/Chemical-Prioritization-0D9488)
 ![Ecological Analysis](https://img.shields.io/badge/Analysis-Ecological-16A34A)
 ![Human Health](https://img.shields.io/badge/Analysis-Human_Health-E11D48)
-
 
 
 [Overview](#overview) · [Quick start](#quick-start) · [Methods](#analysis-framework) · [Data](#input-data) · [Outputs](#outputs-and-figures) · [Citation](#citation)
