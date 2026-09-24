@@ -13,6 +13,16 @@
 ![Monte Carlo](https://img.shields.io/badge/Monte_Carlo-Simulation-purple)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
+
+![MCRank](https://img.shields.io/badge/Software-MCRank-2563EB)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Language](https://img.shields.io/badge/Interface-English-22C55E)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)
+![Architecture](https://img.shields.io/badge/Architecture-x64-475569)
+![Application](https://img.shields.io/badge/Application-Desktop-6366F1)
+![GUI](https://img.shields.io/badge/GUI-PySide6-41CD52)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 [Overview](#overview) · [Quick start](#quick-start) · [Methods](#analysis-framework) · [Data](#input-data) · [Outputs](#outputs-and-figures) · [Citation](#citation)
 
 </div>
