@@ -27,7 +27,6 @@ MCRank is a Python desktop application for prioritizing chemicals using exposure
 
 The software brings data validation, priority ranking, evidence assessment, Monte Carlo analysis, and export into one English-language workspace. Priority, evidence, and rank robustness are reported separately so that the basis for each result remains visible.
 
-> **Scientific status.** Version 1.0 uses explicit, configurable defaults that have not been scientifically calibrated. The examples are synthetic. Software tests and reproducible execution do not establish predictive validity on real datasets. See [Methods and assumptions](docs/METHODS.md) before interpreting results.
 
 #### Capabilities
 
